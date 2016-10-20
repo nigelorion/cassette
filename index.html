@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Rainy Day Beats</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Rainy Day Beats</h1>
+        <h3><em>Classic</em> Hip Hop Cassette Tapes</h3>
+        <p>Portland, OR</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h4>J-Dilla</h4>
+          <img src="img/jdilla.jpg">
+          <p>$10.00</p>
+        </div>
+        <div class="col-md-4">
+          <h4>JonWayne</h4>
+          <img src="img/jonwayne.jpg">
+          <p>$10.00</p>
+        </div>
+        <div class="col-md-4">
+          <h4>MF DOOM</h4>
+          <img src="img/mfdoom.jpg">
+          <p>$10.00</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="buyerInfo">
+            <h3>Enter your shipping address:</h3>
+            <div class="form-group">
+              <label>Name:</label>
+              <input id="name" type="text">
+              </input><br>
+              <label>Street:</label>
+              <input id="street" type="text">
+              </input><br>
+              <label>City:</label>
+              <input id="city" type="text">
+              </input><br>
+              <label>State:</label>
+              <input id="state" type="text">
+              </input><br>
+              <label>Zip Code:</label>
+              <input id="zip" type="text">
+              </input><br>
+              <label>Contact Phone Number:</label>
+              <input id="number" type="text">
+            </input><br>
+            </div>
+            <h3>Select Tape:</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="tape" value="jDilla">
+                J-Dilla
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="tape" value="jonWayne">
+                JonWayne
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="tape" value="mfDoom">
+                MF Doom
+              </label>
+            </div>
+
+
+            <button type="submit" class="btn">Checkout Now</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div id="orderReceipt">
+            <h2>Thank you for your order <span id="nameOutput"></span>!</h2>
+            <h3>Will will ship your order to:</h3><br>
+            <p id="streetOutput"></p>
+            <p id="cityOutput"></p>
+            <p id="stateOutput"></p>
+            <p id="zipOutput"></p>
+            <p><strong>If we experience any issues we will give you a call at:</strong>  <span id="numberOutput"></span>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

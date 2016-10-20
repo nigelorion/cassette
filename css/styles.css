@@ -1,0 +1,23 @@
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  padding-top: 15px;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+}
+
+img {
+  width: 50%;
+}
+
+.row {
+  text-align: center;
+}
+ #orderReceipt {
+   display: none;
+   text-align: left;
+ }
+
+#numberOutput {
+  font-size: 15pt;
+}
